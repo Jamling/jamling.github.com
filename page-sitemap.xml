@@ -99,21 +99,14 @@
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/p/adt-extensions/download.html</loc>
-        <lastmod>2019-07-22T11:25:01.995Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.ieclipse.cn/p/adt-extensions/</loc>
-        <lastmod>2019-07-22T11:25:01.995Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>https://www.ieclipse.cn/p/eclipse-explorer/change.html</loc>
+        <lastmod>2019-07-22T11:25:01.995Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.ieclipse.cn/p/adt-extensions/download.html</loc>
         <lastmod>2019-07-22T11:25:01.995Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -127,6 +120,13 @@
     </url>
     
     <url>
+        <loc>https://www.ieclipse.cn/p/adt-extensions/</loc>
+        <lastmod>2019-07-22T11:25:01.995Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://www.ieclipse.cn/p/QuickAF/userguide.html</loc>
         <lastmod>2019-07-22T11:25:01.994Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -134,14 +134,14 @@
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/p/SmartIM4Eclipse/download.html</loc>
+        <loc>https://www.ieclipse.cn/p/SmartIM4Eclipse/</loc>
         <lastmod>2019-07-22T11:25:01.994Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/p/adt-extensions/change.html</loc>
+        <loc>https://www.ieclipse.cn/p/SmartIM4Eclipse/download.html</loc>
         <lastmod>2019-07-22T11:25:01.994Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -162,7 +162,7 @@
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/p/SmartIM4Eclipse/</loc>
+        <loc>https://www.ieclipse.cn/p/adt-extensions/change.html</loc>
         <lastmod>2019-07-22T11:25:01.994Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -183,14 +183,14 @@
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/p/QuickAF/download.html</loc>
+        <loc>https://www.ieclipse.cn/p/Android-ORM/userguide.html</loc>
         <lastmod>2019-07-22T11:25:01.993Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/p/Android-ORM/userguide.html</loc>
+        <loc>https://www.ieclipse.cn/p/QuickAF/download.html</loc>
         <lastmod>2019-07-22T11:25:01.993Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -253,14 +253,14 @@
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/en/p/hexo-generator-i18n/</loc>
+        <loc>https://www.ieclipse.cn/en/p/hexo-theme-nova/</loc>
         <lastmod>2019-07-22T11:25:01.988Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/en/p/hexo-theme-nova/</loc>
+        <loc>https://www.ieclipse.cn/en/p/hexo-generator-i18n/</loc>
         <lastmod>2019-07-22T11:25:01.988Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -288,13 +288,6 @@
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/en/p/adt-extensions/</loc>
-        <lastmod>2019-07-22T11:25:01.986Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>https://www.ieclipse.cn/en/p/Android-ORM/userguide.html</loc>
         <lastmod>2019-07-22T11:25:01.986Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -309,14 +302,21 @@
     </url>
     
     <url>
-        <loc>https://www.ieclipse.cn/about/resume2.html</loc>
-        <lastmod>2019-07-22T11:25:01.985Z</lastmod>
+        <loc>https://www.ieclipse.cn/en/p/adt-extensions/</loc>
+        <lastmod>2019-07-22T11:25:01.986Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://www.ieclipse.cn/categories/</loc>
+        <lastmod>2019-07-22T11:25:01.985Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.ieclipse.cn/about/resume2.html</loc>
         <lastmod>2019-07-22T11:25:01.985Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

@@ -5,7 +5,7 @@
   <title>静勤居</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Android,Eclipse 插件,Java,Web,奇淫巧技,其它,Eclipse,ADT,QuickAF,Gradle,CI,J2EE,xml,SWT,Swing,PHP,Ajax,MySQL,Hexo,js,Node.js,git,安全">
+  <meta name="keywords" content="Android,Eclipse 插件,Java,Web,奇淫巧技,其它,Eclipse,ADT,QuickAF,Gradle,CI,J2EE,Swing,SWT,xml,PHP,Ajax,MySQL,Hexo,js,Node.js,git,安全">
   <meta name="description" content="Jamling's 技术文章博客.">
   
 
@@ -118,7 +118,7 @@
 <main>
           <div class="card index-card hoverable animated fadeInUp" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="card-content" itemprop="blogPost">
-              <h3 class="card-title"><a itemprop="name headline" href="/2016/08/12/Android/quickaf-preference/" class="article-title">QuickAF Preference介绍</a></h3>
+              <h3 class="card-title"><a itemprop="name headline" href="/2016/08/12/Android/quickaf-controller-sample/" class="article-title">QuickAF解析REST API综合示例</a></h3>
               <div class="divider"></div>
               <div class="section post-header clearfix">
                 <!-- sub element must be span -->
@@ -130,21 +130,20 @@
               <div class="nova-flex excerpt-box">
               
               <div class="excerpt" itemprop="description articleBody">
-              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>首先上个图</p>
-<img src="/2016/08/12/Android/quickaf-preference/preference.png">
+              <img src="/2016/08/12/Android/quickaf-controller-sample/weather.png">
 
-<p>Preference控件的目的在于替换Android自带的Preference，在<a href="https://github.com/Jamling/QuickAF" target="_blank" rel="noopener">QuickAF</a>中，Preference被设计为控件，可以在layout/Activity中随意使用，不必像自带的Preference，需要配合res/xml/xxx_preference、PreferenceFragment/PreferenceActivity使用。</p>
+<p>在<a href="https://github.com/Jamling/QuickAF" target="_blank" rel="noopener">QuickAF</a>中使用基于Volley的网络数据连接框架。能够方便地执行REST API网络请求，并与界面进行交互。在本文中通过一个天气查询的综合示例来讲解<a href="https://github.com/Jamling/QuickAF" target="_blank" rel="noopener">QuickAF</a>中如何进行网络请求。</p>
               </div>
               </div>
             </div>
             <div class="divider"></div>
 
-            <div class="card-action" data-tkey="4d8947211a38d2f5101ed2d77cf19f0c">
-              <a class="icon nova-bubbles action-item" href="/2016/08/12/Android/quickaf-preference/#comment"><span class="count"></span><span class="hidden-xs">评论</span></a>
-              <a class="icon nova-eye action-item" href="/2016/08/12/Android/quickaf-preference/"><span class="count"></span><span class="hidden-xs">次阅读</span></a>
-              <a class="icon nova-hand-right action-item" href="/2016/08/12/Android/quickaf-preference/"><span>阅读全文</span></a>
+            <div class="card-action" data-tkey="9e5152924aeb954ecc6b17e176c75234">
+              <a class="icon nova-bubbles action-item" href="/2016/08/12/Android/quickaf-controller-sample/#comment"><span class="count"></span><span class="hidden-xs">评论</span></a>
+              <a class="icon nova-eye action-item" href="/2016/08/12/Android/quickaf-controller-sample/"><span class="count"></span><span class="hidden-xs">次阅读</span></a>
+              <a class="icon nova-hand-right action-item" href="/2016/08/12/Android/quickaf-controller-sample/"><span>阅读全文</span></a>
             </div>
-            <meta itemprop="url" content="https://www.ieclipse.cn/2016/08/12/Android/quickaf-preference/">
+            <meta itemprop="url" content="https://www.ieclipse.cn/2016/08/12/Android/quickaf-controller-sample/">
             <meta itemprop="dateModified" content="2019-07-22T11:25:01.896Z">
           </div>
           <div class="card index-card hoverable animated fadeInUp" itemscope itemtype="http://schema.org/BlogPosting">
@@ -272,34 +271,6 @@
           </div>
           <div class="card index-card hoverable animated fadeInUp" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="card-content" itemprop="blogPost">
-              <h3 class="card-title"><a itemprop="name headline" href="/2016/08/02/Android/Android-coutdown-button/" class="article-title">Android倒计时控件</a></h3>
-              <div class="divider"></div>
-              <div class="section post-header clearfix">
-                <!-- sub element must be span -->
-                <span class="post-date"><time class="icon nova-calendar" itemprop="datePublished" datetime="2016-08-02T13:01:00.000Z"><time datetime="2016-08-02T13:01:00.000Z">2016-08-02</time></time></span>
-                <span class="post-category"><i class="glyphicon glyphicon-folder-close"></i><span class="hidden-xs">分类</span><a class="category-item" href="/categories/Android/">Android</a></span>
-                <span class="post-tag"><i class="icon nova-tags"></i><span class="hidden-xs">标签</span><a class="tag-item" href="/tags/Android/">Android</a><a class="tag-item" href="/tags/QuickAF/">QuickAF</a></span>
-              </div>
-              <div class="divider"></div>
-              <div class="nova-flex excerpt-box">
-              
-              <div class="excerpt" itemprop="description articleBody">
-              <p>Android倒计时控件，通常在发送验证码时用得最多。其实Android系统提供了一个倒计时控件叫做CountDownTimer，不过这个控件没有与界面控件绑定，在这里，我要讲述的是如何自己写一个倒计时的控件。</p>
-              </div>
-              </div>
-            </div>
-            <div class="divider"></div>
-
-            <div class="card-action" data-tkey="0d822755873983d9a9d29a8f65ed9966">
-              <a class="icon nova-bubbles action-item" href="/2016/08/02/Android/Android-coutdown-button/#comment"><span class="count"></span><span class="hidden-xs">评论</span></a>
-              <a class="icon nova-eye action-item" href="/2016/08/02/Android/Android-coutdown-button/"><span class="count"></span><span class="hidden-xs">次阅读</span></a>
-              <a class="icon nova-hand-right action-item" href="/2016/08/02/Android/Android-coutdown-button/"><span>阅读全文</span></a>
-            </div>
-            <meta itemprop="url" content="https://www.ieclipse.cn/2016/08/02/Android/Android-coutdown-button/">
-            <meta itemprop="dateModified" content="2019-10-16T09:43:22.035Z">
-          </div>
-          <div class="card index-card hoverable animated fadeInUp" itemscope itemtype="http://schema.org/BlogPosting">
-            <div class="card-content" itemprop="blogPost">
               <h3 class="card-title"><a itemprop="name headline" href="/2016/08/02/Android/Android-code-states/" class="article-title">Android使用代码来实现StateListDrawable</a></h3>
               <div class="divider"></div>
               <div class="section post-header clearfix">
@@ -330,6 +301,34 @@
             </div>
             <meta itemprop="url" content="https://www.ieclipse.cn/2016/08/02/Android/Android-code-states/">
             <meta itemprop="dateModified" content="2019-07-22T11:25:01.894Z">
+          </div>
+          <div class="card index-card hoverable animated fadeInUp" itemscope itemtype="http://schema.org/BlogPosting">
+            <div class="card-content" itemprop="blogPost">
+              <h3 class="card-title"><a itemprop="name headline" href="/2016/08/02/Android/Android-coutdown-button/" class="article-title">Android倒计时控件</a></h3>
+              <div class="divider"></div>
+              <div class="section post-header clearfix">
+                <!-- sub element must be span -->
+                <span class="post-date"><time class="icon nova-calendar" itemprop="datePublished" datetime="2016-08-02T13:01:00.000Z"><time datetime="2016-08-02T13:01:00.000Z">2016-08-02</time></time></span>
+                <span class="post-category"><i class="glyphicon glyphicon-folder-close"></i><span class="hidden-xs">分类</span><a class="category-item" href="/categories/Android/">Android</a></span>
+                <span class="post-tag"><i class="icon nova-tags"></i><span class="hidden-xs">标签</span><a class="tag-item" href="/tags/Android/">Android</a><a class="tag-item" href="/tags/QuickAF/">QuickAF</a></span>
+              </div>
+              <div class="divider"></div>
+              <div class="nova-flex excerpt-box">
+              
+              <div class="excerpt" itemprop="description articleBody">
+              <p>Android倒计时控件，通常在发送验证码时用得最多。其实Android系统提供了一个倒计时控件叫做CountDownTimer，不过这个控件没有与界面控件绑定，在这里，我要讲述的是如何自己写一个倒计时的控件。</p>
+              </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <div class="card-action" data-tkey="0d822755873983d9a9d29a8f65ed9966">
+              <a class="icon nova-bubbles action-item" href="/2016/08/02/Android/Android-coutdown-button/#comment"><span class="count"></span><span class="hidden-xs">评论</span></a>
+              <a class="icon nova-eye action-item" href="/2016/08/02/Android/Android-coutdown-button/"><span class="count"></span><span class="hidden-xs">次阅读</span></a>
+              <a class="icon nova-hand-right action-item" href="/2016/08/02/Android/Android-coutdown-button/"><span>阅读全文</span></a>
+            </div>
+            <meta itemprop="url" content="https://www.ieclipse.cn/2016/08/02/Android/Android-coutdown-button/">
+            <meta itemprop="dateModified" content="2019-10-16T09:43:22.035Z">
           </div>
           <div class="card index-card hoverable animated fadeInUp" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="card-content" itemprop="blogPost">
