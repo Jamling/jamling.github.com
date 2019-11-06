@@ -580,9 +580,10 @@ jQuery(document).ready(function($) {
 <!-- LeanClound官方Javascript SDK -->
 <script>
   var page_layout = 'false'
+  var lc_debug = true;
   if(typeof AV === 'undefined') {
     $.getScript('//cdn1.lncld.net/static/js/av-min-1.2.1.js',function() {
-      console.log('load');
+      lc_debug && console.log('init AV after av.js loaded');
         AV.init({
           appId : 'rYUER9KxmGUXSpfEtu7wCFMo-gzGzoHsz',
           appKey : 'k7hzTkcS0blxgry4VT9rJjYj'
@@ -604,7 +605,7 @@ jQuery(document).ready(function($) {
     url : 'about/resume.html' || 'https://www.ieclipse.cn/about/resume.html',
     title : '求职简历 － Android'
   };
-  console.log('lcconfig', lc_config);
+  lc_debug && console.log('lcconfig', lc_config);
 
   var lc_table = 'Counter' || 'Counter';
 
@@ -619,7 +620,6 @@ jQuery(document).ready(function($) {
           insert(results);
           return;
         }
-        console.log('result', results);
         update(results);
         show(results);
       },
@@ -631,7 +631,7 @@ jQuery(document).ready(function($) {
 
     function insert(data) {
       if (!data) {
-        console.log('data is null new object');
+        lc_debug && console.log('data is null new object');
         var M = AV.Object.extend(lc_table);
         data = new M();
         data.set('views', 1);
@@ -640,10 +640,9 @@ jQuery(document).ready(function($) {
         data.set(key, lc_config[key]);
       }
       data.save().then(function(data) {
-        console.log('created objectId is ' + data.id);
+        lc_debug && console.log('created objectId is ' + data.id);
       }, function(error) {
-        console.log("create object failed");
-        console.log(error);
+        lc_debug && console.log("create object failed", error);
       });
     }
 
@@ -652,12 +651,12 @@ jQuery(document).ready(function($) {
         if (key !== 'pageId')
         data.set(key, lc_config[key]);
       }
-      console.log("after change,data", data);
+      lc_debug && console.log("after change,data", data);
       data.increment('views', 1);
       data.save().then(function(data) {
-        console.log("update to " + data.get('views'));
+        lc_debug && console.log("update to " + data.get('views'));
       }, function(error) {
-        console.log("update object failed", error);
+        lc_debug && console.log("update object failed", error);
       });
     }
 

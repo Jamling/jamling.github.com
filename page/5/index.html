@@ -495,7 +495,7 @@
         <h3 class="panel-title">友情链接</h3>
       </div>
       <div class="list-group" id="widget-links">
-      <a class="list-group-item has-icon" href="http://life.ieclipse.cn" title="Jamling's Blog" target="_blank"><img src="/image/logo.png" alt="Jamling's Blog">Jamling's Blog</a><a class="list-group-item has-icon" href="http://jamling.coding.me/birthday-tool/" title="生辰助手" target="_blank"><img src="http://jamling.coding.me/birthday-tool/image.png" alt="生辰助手">生辰助手</a>
+      <a class="list-group-item has-icon" href="http://life.ieclipse.cn" title="Jamling's Blog" target="_blank"><img src="/image/logo.png" alt="Jamling's Blog">Jamling's Blog</a><a class="list-group-item has-icon" href="http://jamling.coding.me/birthday-tool/" title="生辰助手" target="_blank"><img src="//jamling.coding.me/birthday-tool/image.png" alt="生辰助手">生辰助手</a>
       </div>
     </div>
 <script src="https://changyan.itc.cn/js/lib/jquery.js"></script>
@@ -576,9 +576,10 @@
 <!-- LeanClound官方Javascript SDK -->
 <script>
   var page_layout = 'true'
+  var lc_debug = true;
   if(typeof AV === 'undefined') {
     $.getScript('//cdn1.lncld.net/static/js/av-min-1.2.1.js',function() {
-      console.log('load');
+      lc_debug && console.log('init AV after av.js loaded');
         AV.init({
           appId : 'rYUER9KxmGUXSpfEtu7wCFMo-gzGzoHsz',
           appKey : 'k7hzTkcS0blxgry4VT9rJjYj'
@@ -600,7 +601,7 @@
     url : 'page/5/index.html' || '',
     title : '首页'
   };
-  console.log('lcconfig', lc_config);
+  lc_debug && console.log('lcconfig', lc_config);
 
   var lc_table = 'Counter' || 'Counter';
 
@@ -615,7 +616,6 @@
           insert(results);
           return;
         }
-        console.log('result', results);
         update(results);
         show(results);
       },
@@ -627,7 +627,7 @@
 
     function insert(data) {
       if (!data) {
-        console.log('data is null new object');
+        lc_debug && console.log('data is null new object');
         var M = AV.Object.extend(lc_table);
         data = new M();
         data.set('views', 1);
@@ -636,10 +636,9 @@
         data.set(key, lc_config[key]);
       }
       data.save().then(function(data) {
-        console.log('created objectId is ' + data.id);
+        lc_debug && console.log('created objectId is ' + data.id);
       }, function(error) {
-        console.log("create object failed");
-        console.log(error);
+        lc_debug && console.log("create object failed", error);
       });
     }
 
@@ -648,12 +647,12 @@
         if (key !== 'pageId')
         data.set(key, lc_config[key]);
       }
-      console.log("after change,data", data);
+      lc_debug && console.log("after change,data", data);
       data.increment('views', 1);
       data.save().then(function(data) {
-        console.log("update to " + data.get('views'));
+        lc_debug && console.log("update to " + data.get('views'));
       }, function(error) {
-        console.log("update object failed", error);
+        lc_debug && console.log("update object failed", error);
       });
     }
 

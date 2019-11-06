@@ -354,9 +354,10 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
 <!-- LeanClound官方Javascript SDK -->
 <script>
   var page_layout = 'false'
+  var lc_debug = true;
   if(typeof AV === 'undefined') {
     $.getScript('//cdn1.lncld.net/static/js/av-min-1.2.1.js',function() {
-      console.log('load');
+      lc_debug && console.log('init AV after av.js loaded');
         AV.init({
           appId : 'rYUER9KxmGUXSpfEtu7wCFMo-gzGzoHsz',
           appKey : 'k7hzTkcS0blxgry4VT9rJjYj'
@@ -378,7 +379,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
     url : 'en/2016/01/03/Eclipse/Eclipse-explorer4/' || 'https://www.ieclipse.cn/2016/01/03/Eclipse/Eclipse-explorer4/',
     title : 'Eclipse Explorer插件4.0'
   };
-  console.log('lcconfig', lc_config);
+  lc_debug && console.log('lcconfig', lc_config);
 
   var lc_table = 'Counter' || 'Counter';
 
@@ -393,7 +394,6 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
           insert(results);
           return;
         }
-        console.log('result', results);
         update(results);
         show(results);
       },
@@ -405,7 +405,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
 
     function insert(data) {
       if (!data) {
-        console.log('data is null new object');
+        lc_debug && console.log('data is null new object');
         var M = AV.Object.extend(lc_table);
         data = new M();
         data.set('views', 1);
@@ -414,10 +414,9 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
         data.set(key, lc_config[key]);
       }
       data.save().then(function(data) {
-        console.log('created objectId is ' + data.id);
+        lc_debug && console.log('created objectId is ' + data.id);
       }, function(error) {
-        console.log("create object failed");
-        console.log(error);
+        lc_debug && console.log("create object failed", error);
       });
     }
 
@@ -426,12 +425,12 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
         if (key !== 'pageId')
         data.set(key, lc_config[key]);
       }
-      console.log("after change,data", data);
+      lc_debug && console.log("after change,data", data);
       data.increment('views', 1);
       data.save().then(function(data) {
-        console.log("update to " + data.get('views'));
+        lc_debug && console.log("update to " + data.get('views'));
       }, function(error) {
-        console.log("update object failed", error);
+        lc_debug && console.log("update object failed", error);
       });
     }
 

@@ -227,8 +227,8 @@
   <div class="jumbotron">
     <div class="card-content">
       <h2 class="card-title">打赏</h2>
-      <p>如果您对相当项目感兴趣，欢迎前往<a href="https://github.com/Jamling" target="_blank" rel="noopener">github</a>
-        fork或star，您的star或fork将是我最大的动力！如果您愿意的话，也可以对相关项目进行捐赠，让免费开源之路能够走得更远~</p>
+      <p>如果您对相关项目感兴趣，欢迎前往<a href="https://github.com/Jamling" target="_blank" rel="noopener">github</a>
+        fork或star，您的star或fork将是我最大的动力！如果您觉得对你有帮助，不妨点击下方的捐赠，请我喝一杯咖啡。您的馈赠将在24小时内更新在下方的打赏记录中~</p>
     </div>
     <div class="card-action">
       <a class="btn btn-raised btn-primary" href="#DonateModal" role="button" data-toggle="modal" data-target="#DonateModal">捐赠</a>
@@ -503,9 +503,10 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
 <!-- LeanClound官方Javascript SDK -->
 <script>
   var page_layout = 'false'
+  var lc_debug = true;
   if(typeof AV === 'undefined') {
     $.getScript('//cdn1.lncld.net/static/js/av-min-1.2.1.js',function() {
-      console.log('load');
+      lc_debug && console.log('init AV after av.js loaded');
         AV.init({
           appId : 'rYUER9KxmGUXSpfEtu7wCFMo-gzGzoHsz',
           appKey : 'k7hzTkcS0blxgry4VT9rJjYj'
@@ -527,7 +528,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
     url : 'en/donate/index.html' || 'https://www.ieclipse.cn/donate/index.html',
     title : 'Donate'
   };
-  console.log('lcconfig', lc_config);
+  lc_debug && console.log('lcconfig', lc_config);
 
   var lc_table = 'Counter' || 'Counter';
 
@@ -542,7 +543,6 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
           insert(results);
           return;
         }
-        console.log('result', results);
         update(results);
         show(results);
       },
@@ -554,7 +554,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
 
     function insert(data) {
       if (!data) {
-        console.log('data is null new object');
+        lc_debug && console.log('data is null new object');
         var M = AV.Object.extend(lc_table);
         data = new M();
         data.set('views', 1);
@@ -563,10 +563,9 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
         data.set(key, lc_config[key]);
       }
       data.save().then(function(data) {
-        console.log('created objectId is ' + data.id);
+        lc_debug && console.log('created objectId is ' + data.id);
       }, function(error) {
-        console.log("create object failed");
-        console.log(error);
+        lc_debug && console.log("create object failed", error);
       });
     }
 
@@ -575,12 +574,12 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
         if (key !== 'pageId')
         data.set(key, lc_config[key]);
       }
-      console.log("after change,data", data);
+      lc_debug && console.log("after change,data", data);
       data.increment('views', 1);
       data.save().then(function(data) {
-        console.log("update to " + data.get('views'));
+        lc_debug && console.log("update to " + data.get('views'));
       }, function(error) {
-        console.log("update object failed", error);
+        lc_debug && console.log("update object failed", error);
       });
     }
 

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="概览">
-  <meta name="description" content="Jamling's 技术文章博客.">
+  <meta name="description" content>
   
 
   <meta name="og:type" content="website">
@@ -14,14 +14,14 @@
   <meta name="og:image" content="https://www.ieclipse.cn/image/logo.png">
   <meta name="og:title" content="概览">
   <meta name="og:url" content="https://www.ieclipse.cn/p/hexo-theme-nova/index.html">
-  <meta name="og:description" content="Jamling's 技术文章博客.">
+  <meta name="og:description" content>
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="静勤居">
   <meta name="twitter:image" content="https://www.ieclipse.cn/image/logo.png">
   <meta name="twitter:title" content="概览">
   <meta name="twitter:creator" content="@JamlingLi">
-  <meta name="twitter:description" content="Jamling's 技术文章博客.">
+  <meta name="twitter:description" content>
 
   <!-- Canonical links -->
   <link rel="canonical" href="https://www.ieclipse.cn/p/hexo-theme-nova/index.html">
@@ -176,160 +176,95 @@
   </header>
   <div class="article-content" itemprop="articleBody">
   
-    [![Build Status](https://travis-ci.org/Jamling/hexo-theme-nova.svg?branch=master)](https://travis-ci.org/Jamling/hexo-theme-nova)
-[![node](https://img.shields.io/node/v/hexo-theme-nova.svg)](https://www.npmjs.com/package/hexo-theme-nova)
-[![GitHub release](https://img.shields.io/github/release/jamling/hexo-theme-nova.svg)](https://github.com/Jamling/hexo-theme-nova/releases/latest)
-
-
-## 简介 ##
-
-nova是使用swig模板引擎编写的[hexo](https://hexo.io)主题，旨在方便快速地创建为github项目创建一个简单的静态网站，如[Github-Pages]。
-
-本主题主要使用以下三种布局来展现页面：
-
- 1. `post` 用于博客文章
- 2. `project` 用于github项目页面
- 3. `page` 用于其它页面，如关于我
-
-本主题还使用了一些插件作为辅助函数。如TOC目录生成，项目侧边导航栏等。详情请访问[我的主页](http://www.ieclipse.cn) (http://www.ieclipse.cn)。
-
-一些好玩的东东[http://www.ieclipse.cn/en/demo/](http://www.ieclipse.cn/en/demo/).
-
-## 预览截屏
-
-![screenshot](https://raw.githubusercontent.com/Jamling/hexo-theme-nova/master/screenshots/bootstrap.png)
-
-## 安装
-Cd到博客/站点根目录，然后检出代码
-```bash
-$ git clone git@github.com:Jamling/hexo-theme-nova.git themes/nova
-```
-最后在站点<var>_config.yml</var> 配置文件中设置 `theme: nova` 来使用nova主题。
-
-## 依赖
-本主题使用了一些第3方的插件，在使用之前，请在博客站点根目录下安装这些插件
-
-```powershell
-npm install hexo-renderer-sass --save
+    <p><a href="https://travis-ci.org/Jamling/hexo-theme-nova"><img src="https://travis-ci.org/Jamling/hexo-theme-nova.svg?branch=master" alt="Build Status"></a><br><a href="https://www.npmjs.com/package/hexo-theme-nova"><img src="https://img.shields.io/node/v/hexo-theme-nova.svg" alt="node"></a><br><a href="https://github.com/Jamling/hexo-theme-nova/releases/latest"><img src="https://img.shields.io/github/release/jamling/hexo-theme-nova.svg" alt="GitHub release"></a></p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>nova是使用swig模板引擎编写的<a href="https://hexo.io">hexo</a>主题，旨在方便快速地创建为github项目创建一个简单的静态网站，如[Github-Pages]。</p>
+<p>本主题主要使用以下三种布局来展现页面：</p>
+<ol>
+<li><code>post</code> 用于博客文章</li>
+<li><code>project</code> 用于github项目页面</li>
+<li><code>page</code> 用于其它页面，如关于我</li>
+</ol>
+<p>本主题还使用了一些插件作为辅助函数。如TOC目录生成，项目侧边导航栏等。详情请访问<a href="http://www.ieclipse.cn">我的主页</a> (<a href="http://www.ieclipse.cn)。">http://www.ieclipse.cn)。</a></p>
+<p>一些好玩的东东<a href="http://www.ieclipse.cn/en/demo/">http://www.ieclipse.cn/en/demo/</a>.</p>
+<h2 id="预览截屏"><a href="#预览截屏" class="headerlink" title="预览截屏"></a>预览截屏</h2><p><img src="https://raw.githubusercontent.com/Jamling/hexo-theme-nova/master/screenshots/bootstrap.png" alt="screenshot"></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Cd到博客/站点根目录，然后检出代码</p>
+<pre><code class="bash">$ git <span class="built_in">clone</span> git@github.com:Jamling/hexo-theme-nova.git themes/nova</code></pre>
+<p>最后在站点<var>_config.yml</var> 配置文件中设置 <code>theme: nova</code> 来使用nova主题。</p>
+<h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><p>本主题使用了一些第3方的插件，在使用之前，请在博客站点根目录下安装这些插件</p>
+<pre><code class="powershell">npm install hexo-renderer-sass --save
 npm install hexo-generator-i18n --save
 
 npm install hexo-generator-github --save
-npm install hexo-filter-highlight --save
-```
+npm install hexo-filter-highlight --save</code></pre>
+<ul>
+<li><var>hexo-generator-github</var>不是必需的，如果sources中没有<code>project</code>布局页面，则可以不安装此插件。</li>
+<li><var>hexo-filter-highlight</var>不是必需的，如果不想用本主题代码高亮方案，则可以不安装此插件。</li>
+</ul>
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><h3 id="js-css"><a href="#js-css" class="headerlink" title="js_css"></a>js_css</h3><p>配置全局css样式及js脚本，示例：</p>
+<pre><code class="yaml"><span class="attr">js_css:</span>
+<span class="attr">- url:</span> <span class="string">css/nova.css</span>
+<span class="attr">- url:</span> <span class="string">js/script.js</span></code></pre>
+<h3 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h3><p>配置站点菜单栏，示例：</p>
+<pre><code class="yaml"><span class="attr">menu:</span>
+<span class="attr">- name:</span> <span class="string">home</span>
+<span class="attr">  url:</span> <span class="string">/</span>
+<span class="attr">- name:</span> <span class="string">project</span>
+<span class="attr">  url:</span> <span class="string">/p/</span>
+<span class="attr">- name:</span> <span class="string">category</span>
+<span class="attr">  url:</span> <span class="string">/categories/</span>
+<span class="attr">- name:</span> <span class="string">archive</span>
+<span class="attr">  url:</span> <span class="string">/archives/</span>
+<span class="attr">- name:</span> <span class="string">about</span>
+<span class="attr">  url:</span> <span class="string">/about/</span></code></pre>
+<p><strong>the <var>name</var> 将会被国际化输出</strong></p>
+<h3 id="post-widgets"><a href="#post-widgets" class="headerlink" title="post widgets"></a>post widgets</h3><pre><code class="yaml"><span class="comment"># post widgets. see layout/post/widget_xxx.swig</span>
+<span class="attr">post_widgets:</span>
+<span class="comment">#  - search</span>
+<span class="bullet">  -</span> <span class="string">category</span>
+<span class="bullet">  -</span> <span class="string">tag</span>
+<span class="bullet">  -</span> <span class="string">archive</span>
+<span class="bullet">  -</span> <span class="string">recent</span>
 
-- <var>hexo-generator-github</var>不是必需的，如果sources中没有`project`布局页面，则可以不安装此插件。
-- <var>hexo-filter-highlight</var>不是必需的，如果不想用本主题代码高亮方案，则可以不安装此插件。
-
-## 主题配置
-
-### js_css
-配置全局css样式及js脚本，示例：
-```yaml
-js_css:
-- url: css/nova.css
-- url: js/script.js
-```
-### menu
-配置站点菜单栏，示例：
-```yaml
-menu:
-- name: home
-  url: /
-- name: project
-  url: /p/
-- name: category
-  url: /categories/
-- name: archive
-  url: /archives/
-- name: about
-  url: /about/
-```
-**the <var>name</var> 将会被国际化输出**
-
-### post widgets
-```yaml
-# post widgets. see layout/post/widget_xxx.swig
-post_widgets:
-#  - search
-  - category
-  - tag
-  - archive
-  - recent
-
-post_widgets_show_count: true
-post_widgets_recent_count: 5
-```
-
-### archive
-```yaml
-# archive
-archive:
-  type: yearly #yearly|monthly(defaut) see list_archives options
-  order: -1 # 1(asc)|-1(desc) defaut desc
-  format: YYYY
-  show_count: false # true|false, defaut true
-  amount: 5 # amount in post widgets
-```
-
-### toc
-```yaml
-# toc
-toc:
-  post: true
-  project: true
-  page: true
-```
-
-### 打赏
-```yaml
-donate:
-  enable: true # whether enable page donate
-```
-打赏的二维码图片尺寸建议大于200px，打赏图片名称为：donate_aliplay.png和donate_wechat.png
-
-### 界面网格css
-配置html最后呈现界面布局的网格系统样式
-
-```yaml
-layout:
-  index: # 首页，博客文章页布局同首页.
-    main: col-sx-12 col-sm-8 col-md-9 col-lg-9
-    widgets: col-sx-12 col-sm-4 col-md-3 col-lg-3 hidden-xs
-  page: # 单页布局
-    main: col-sx-12 col-sm-8 col-md-9 col-lg-9
-    toc: col-sx-12 col-sm-4 col-md-3 col-lg-3 hidden-xs
-  p: # 项目文档页
-    sidebar: col-sx-12 col-sm-12 col-md-2 col-lg-2
-    main: col-sx-12 col-sm-8 col-md-8 col-lg-8
-    toc: col-sx-2 col-sm-2 col-md-2 col-lg-2 hidden-xs
-
-```
-
-## 参考
-### 布局
-请参考[nova layouts](https://ieclipse.cn/p/hexo-theme-nova/layouts.html)
-
-### Front-matter
-请参考[nova front-matter](https://ieclipse.cn/p/hexo-theme-nova/front-matter.html)
-
-### 辅助函数
-请参考[nova helpers](https://ieclipse.cn/p/hexo-theme-nova/helpers.html)
-
-### 插件
-
-- [hexo-renderer-sass] 用于生成css。
-- [hexo-generator-i18n] 用于辅助生成多语言站点页页。
-- [hexo-generator-github] 用于辅助生成github项目相关的页面。
-- [hexo-filter-highlight] 用于代码高亮
-
-详情请参考[nova plugins](https://ieclipse.cn/p/hexo-theme-nova/plugins.html)
-
-[lodash]: https://github.com/lodash/lodash
-[cheerio]: https://github.com/cheeriojs/cheerio
-[hexo-renderer-sass]: https://github.com/knksmith57/hexo-renderer-sass
-[hexo-generator-github]: https://github.com/Jamling/hexo-generator-github/
-[hexo-generator-i18n]: https://github.com/Jamling/hexo-generator-i18n/
-[hexo-filter-highlight]: https://github.com/Jamling/hexo-filter-highlight/
+<span class="attr">post_widgets_show_count:</span> <span class="literal">true</span>
+<span class="attr">post_widgets_recent_count:</span> <span class="number">5</span></code></pre>
+<h3 id="archive"><a href="#archive" class="headerlink" title="archive"></a>archive</h3><pre><code class="yaml"><span class="comment"># archive</span>
+<span class="attr">archive:</span>
+<span class="attr">  type:</span> <span class="string">yearly</span> <span class="comment">#yearly|monthly(defaut) see list_archives options</span>
+<span class="attr">  order:</span> <span class="bullet">-1</span> <span class="comment"># 1(asc)|-1(desc) defaut desc</span>
+<span class="attr">  format:</span> <span class="string">YYYY</span>
+<span class="attr">  show_count:</span> <span class="literal">false</span> <span class="comment"># true|false, defaut true</span>
+<span class="attr">  amount:</span> <span class="number">5</span> <span class="comment"># amount in post widgets</span></code></pre>
+<h3 id="toc"><a href="#toc" class="headerlink" title="toc"></a>toc</h3><pre><code class="yaml"><span class="comment"># toc</span>
+<span class="attr">toc:</span>
+<span class="attr">  post:</span> <span class="literal">true</span>
+<span class="attr">  project:</span> <span class="literal">true</span>
+<span class="attr">  page:</span> <span class="literal">true</span></code></pre>
+<h3 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h3><pre><code class="yaml"><span class="attr">donate:</span>
+<span class="attr">  enable:</span> <span class="literal">true</span> <span class="comment"># whether enable page donate</span></code></pre>
+<p>打赏的二维码图片尺寸建议大于200px，打赏图片名称为：donate_aliplay.png和donate_wechat.png</p>
+<h3 id="界面网格css"><a href="#界面网格css" class="headerlink" title="界面网格css"></a>界面网格css</h3><p>配置html最后呈现界面布局的网格系统样式</p>
+<pre><code class="yaml"><span class="attr">layout:</span>
+<span class="attr">  index:</span> <span class="comment"># 首页，博客文章页布局同首页.</span>
+<span class="attr">    main:</span> <span class="string">col-sx-12</span> <span class="string">col-sm-8</span> <span class="string">col-md-9</span> <span class="string">col-lg-9</span>
+<span class="attr">    widgets:</span> <span class="string">col-sx-12</span> <span class="string">col-sm-4</span> <span class="string">col-md-3</span> <span class="string">col-lg-3</span> <span class="string">hidden-xs</span>
+<span class="attr">  page:</span> <span class="comment"># 单页布局</span>
+<span class="attr">    main:</span> <span class="string">col-sx-12</span> <span class="string">col-sm-8</span> <span class="string">col-md-9</span> <span class="string">col-lg-9</span>
+<span class="attr">    toc:</span> <span class="string">col-sx-12</span> <span class="string">col-sm-4</span> <span class="string">col-md-3</span> <span class="string">col-lg-3</span> <span class="string">hidden-xs</span>
+<span class="attr">  p:</span> <span class="comment"># 项目文档页</span>
+<span class="attr">    sidebar:</span> <span class="string">col-sx-12</span> <span class="string">col-sm-12</span> <span class="string">col-md-2</span> <span class="string">col-lg-2</span>
+<span class="attr">    main:</span> <span class="string">col-sx-12</span> <span class="string">col-sm-8</span> <span class="string">col-md-8</span> <span class="string">col-lg-8</span>
+<span class="attr">    toc:</span> <span class="string">col-sx-2</span> <span class="string">col-sm-2</span> <span class="string">col-md-2</span> <span class="string">col-lg-2</span> <span class="string">hidden-xs</span>
+</code></pre>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>请参考<a href="https://ieclipse.cn/p/hexo-theme-nova/layouts.html">nova layouts</a></p>
+<h3 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h3><p>请参考<a href="https://ieclipse.cn/p/hexo-theme-nova/front-matter.html">nova front-matter</a></p>
+<h3 id="辅助函数"><a href="#辅助函数" class="headerlink" title="辅助函数"></a>辅助函数</h3><p>请参考<a href="https://ieclipse.cn/p/hexo-theme-nova/helpers.html">nova helpers</a></p>
+<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><ul>
+<li><a href="https://github.com/knksmith57/hexo-renderer-sass">hexo-renderer-sass</a> 用于生成css。</li>
+<li><a href="https://github.com/Jamling/hexo-generator-i18n/">hexo-generator-i18n</a> 用于辅助生成多语言站点页页。</li>
+<li><a href="https://github.com/Jamling/hexo-generator-github/">hexo-generator-github</a> 用于辅助生成github项目相关的页面。</li>
+<li><a href="https://github.com/Jamling/hexo-filter-highlight/">hexo-filter-highlight</a> 用于代码高亮</li>
+</ul>
+<p>详情请参考<a href="https://ieclipse.cn/p/hexo-theme-nova/plugins.html">nova plugins</a></p>
 
   
   </div>
@@ -442,7 +377,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
           目录
         </a></div>
         <div id="toc-body" class="in">
-        
+        <ul class="nav toc-ul"><li><a href="#简介">简介</a></li><li><a href="#预览截屏">预览截屏</a></li><li><a href="#安装">安装</a></li><li><a href="#依赖">依赖</a></li><li><a href="#主题配置">主题配置</a><ul class="nav toc-ul"><li><a href="#js-css">js_css</a></li><li><a href="#menu">menu</a></li><li><a href="#post-widgets">post widgets</a></li><li><a href="#archive">archive</a></li><li><a href="#toc">toc</a></li><li><a href="#打赏">打赏</a></li><li><a href="#界面网格css">界面网格css</a></li></ul></li><li><a href="#参考">参考</a><ul class="nav toc-ul"><li><a href="#布局">布局</a></li><li><a href="#Front-matter">Front-matter</a></li><li><a href="#辅助函数">辅助函数</a></li><li><a href="#插件">插件</a></li></ul></li></ul>
         </div>
       </nav>
 </div>
@@ -542,9 +477,10 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
 <!-- LeanClound官方Javascript SDK -->
 <script>
   var page_layout = 'false'
+  var lc_debug = true;
   if(typeof AV === 'undefined') {
     $.getScript('//cdn1.lncld.net/static/js/av-min-1.2.1.js',function() {
-      console.log('load');
+      lc_debug && console.log('init AV after av.js loaded');
         AV.init({
           appId : 'rYUER9KxmGUXSpfEtu7wCFMo-gzGzoHsz',
           appKey : 'k7hzTkcS0blxgry4VT9rJjYj'
@@ -566,7 +502,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
     url : 'p/hexo-theme-nova/index.html' || 'https://www.ieclipse.cn/p/hexo-theme-nova/index.html',
     title : '概览'
   };
-  console.log('lcconfig', lc_config);
+  lc_debug && console.log('lcconfig', lc_config);
 
   var lc_table = 'Counter' || 'Counter';
 
@@ -581,7 +517,6 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
           insert(results);
           return;
         }
-        console.log('result', results);
         update(results);
         show(results);
       },
@@ -593,7 +528,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
 
     function insert(data) {
       if (!data) {
-        console.log('data is null new object');
+        lc_debug && console.log('data is null new object');
         var M = AV.Object.extend(lc_table);
         data = new M();
         data.set('views', 1);
@@ -602,10 +537,9 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
         data.set(key, lc_config[key]);
       }
       data.save().then(function(data) {
-        console.log('created objectId is ' + data.id);
+        lc_debug && console.log('created objectId is ' + data.id);
       }, function(error) {
-        console.log("create object failed");
-        console.log(error);
+        lc_debug && console.log("create object failed", error);
       });
     }
 
@@ -614,12 +548,12 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
         if (key !== 'pageId')
         data.set(key, lc_config[key]);
       }
-      console.log("after change,data", data);
+      lc_debug && console.log("after change,data", data);
       data.increment('views', 1);
       data.save().then(function(data) {
-        console.log("update to " + data.get('views'));
+        lc_debug && console.log("update to " + data.get('views'));
       }, function(error) {
-        console.log("update object failed", error);
+        lc_debug && console.log("update object failed", error);
       });
     }
 

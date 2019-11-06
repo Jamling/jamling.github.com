@@ -176,26 +176,27 @@
   </header>
   <div class="article-content" itemprop="articleBody">
   
-    # 1.1.1 /2016-10-08
-- Remove getter/setter fully
-- Deprecated defaultValue in @Column
-
-# 1.1.0 /2016-09-07
-- using field reflection, allow the java model been without getter/setter
-
-# 1.0 /2016-02-17
-- 1.0 released to jcenter
- 
-# 1.0	/2014-11-16
-- Add inherit feature
-
-# 1.0	/2014-11-09
-- Fix distinct query issue
-- Fix result columns lost table alias issue
-- Use default null join in Criteria
-
-# 1.0	/2014-10-25
-- Import to Github 
+    <h1 id="1-1-1-2016-10-08"><a href="#1-1-1-2016-10-08" class="headerlink" title="1.1.1 /2016-10-08"></a>1.1.1 /2016-10-08</h1><ul>
+<li>Remove getter/setter fully</li>
+<li>Deprecated defaultValue in @Column</li>
+</ul>
+<h1 id="1-1-0-2016-09-07"><a href="#1-1-0-2016-09-07" class="headerlink" title="1.1.0 /2016-09-07"></a>1.1.0 /2016-09-07</h1><ul>
+<li>using field reflection, allow the java model been without getter/setter</li>
+</ul>
+<h1 id="1-0-2016-02-17"><a href="#1-0-2016-02-17" class="headerlink" title="1.0 /2016-02-17"></a>1.0 /2016-02-17</h1><ul>
+<li>1.0 released to jcenter</li>
+</ul>
+<h1 id="1-0-2014-11-16"><a href="#1-0-2014-11-16" class="headerlink" title="1.0    /2014-11-16"></a>1.0    /2014-11-16</h1><ul>
+<li>Add inherit feature</li>
+</ul>
+<h1 id="1-0-2014-11-09"><a href="#1-0-2014-11-09" class="headerlink" title="1.0    /2014-11-09"></a>1.0    /2014-11-09</h1><ul>
+<li>Fix distinct query issue</li>
+<li>Fix result columns lost table alias issue</li>
+<li>Use default null join in Criteria</li>
+</ul>
+<h1 id="1-0-2014-10-25"><a href="#1-0-2014-10-25" class="headerlink" title="1.0    /2014-10-25"></a>1.0    /2014-10-25</h1><ul>
+<li>Import to Github </li>
+</ul>
 
   
   </div>
@@ -308,7 +309,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
           Table Of Contents
         </a></div>
         <div id="toc-body" class="in">
-        
+        <ul class="nav toc-ul"><li><a href="#1-1-1-2016-10-08">1.1.1 /2016-10-08</a></li><li><a href="#1-1-0-2016-09-07">1.1.0 /2016-09-07</a></li><li><a href="#1-0-2016-02-17">1.0 /2016-02-17</a></li><li><a href="#1-0-2014-11-16">1.0    /2014-11-16</a></li><li><a href="#1-0-2014-11-09">1.0    /2014-11-09</a></li><li><a href="#1-0-2014-10-25">1.0    /2014-10-25</a></li></ul>
         </div>
       </nav>
 </div>
@@ -408,9 +409,10 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
 <!-- LeanClound官方Javascript SDK -->
 <script>
   var page_layout = 'false'
+  var lc_debug = true;
   if(typeof AV === 'undefined') {
     $.getScript('//cdn1.lncld.net/static/js/av-min-1.2.1.js',function() {
-      console.log('load');
+      lc_debug && console.log('init AV after av.js loaded');
         AV.init({
           appId : 'rYUER9KxmGUXSpfEtu7wCFMo-gzGzoHsz',
           appKey : 'k7hzTkcS0blxgry4VT9rJjYj'
@@ -432,7 +434,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
     url : 'en/p/Android-ORM/change.html' || 'https://www.ieclipse.cn/p/Android-ORM/change.html',
     title : 'Change logs'
   };
-  console.log('lcconfig', lc_config);
+  lc_debug && console.log('lcconfig', lc_config);
 
   var lc_table = 'Counter' || 'Counter';
 
@@ -447,7 +449,6 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
           insert(results);
           return;
         }
-        console.log('result', results);
         update(results);
         show(results);
       },
@@ -459,7 +460,7 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
 
     function insert(data) {
       if (!data) {
-        console.log('data is null new object');
+        lc_debug && console.log('data is null new object');
         var M = AV.Object.extend(lc_table);
         data = new M();
         data.set('views', 1);
@@ -468,10 +469,9 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
         data.set(key, lc_config[key]);
       }
       data.save().then(function(data) {
-        console.log('created objectId is ' + data.id);
+        lc_debug && console.log('created objectId is ' + data.id);
       }, function(error) {
-        console.log("create object failed");
-        console.log(error);
+        lc_debug && console.log("create object failed", error);
       });
     }
 
@@ -480,12 +480,12 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
         if (key !== 'pageId')
         data.set(key, lc_config[key]);
       }
-      console.log("after change,data", data);
+      lc_debug && console.log("after change,data", data);
       data.increment('views', 1);
       data.save().then(function(data) {
-        console.log("update to " + data.get('views'));
+        lc_debug && console.log("update to " + data.get('views'));
       }, function(error) {
-        console.log("update object failed", error);
+        lc_debug && console.log("update object failed", error);
       });
     }
 
