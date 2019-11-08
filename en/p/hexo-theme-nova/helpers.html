@@ -254,7 +254,7 @@ page_excerpt@param post the post, if undefined means current pageReturn page exc
     <h1 class="article-title" itemprop="name headline">
       Helpers
     </h1>
-    <meta content="2019-10-24T03:17:13.139Z" itemprop="datePublished">
+    <meta content="2019-11-08T03:05:07.673Z" itemprop="datePublished">
   </header>
   <div class="article-content" itemprop="articleBody">
   
@@ -434,7 +434,7 @@ page_excerpt@param post the post, if undefined means current pageReturn page exc
 <tr>
 <td><code>style</code></td>
 <td>Style to display the archive list. <code>list</code> displays archives in an unordered list. <strong><code>group</code> displays archives in a panel</strong></td>
-<td>list</td>
+<td>list. <strong><code>page</code></strong> displays archives in archives page.</td>
 </tr>
 <tr>
 <td><code>separator</code></td>
@@ -457,7 +457,8 @@ page_excerpt@param post the post, if undefined means current pageReturn page exc
 <td>10</td>
 </tr>
 </tbody></table>
-<h3 id="nova-archives"><a href="#nova-archives" class="headerlink" title="nova_archives"></a>nova_archives</h3><p>Inserts a list of archives.<br>Similar to list_archives, used in post/archives.swig</p>
+<h3 id="nova-archives"><a href="#nova-archives" class="headerlink" title="nova_archives"></a><del>nova_archives</del></h3><p>Deprecated from 0.2.0, see <code>nova_list_archives</code> helpers and set <code>page</code> style options</p>
+<p>Inserts a list of archives.<br>Similar to list_archives, used in post/archives.swig</p>
 <p class="code-caption" data-lang="js" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p>
 
 <pre><code class="js">&lt;%- nova_archives([options]) %&gt;</code></pre>
@@ -694,8 +695,8 @@ page_excerpt@param post the post, if undefined means current pageReturn page exc
 
   <script src="/js/decrypt.min.js"></script>
   <footer class="article-footer">
-    <time class="article-footer-updated" datetime="2019-10-24T03:17:13.139Z" itemprop="dateModified">
-    Last updated: 2019-10-24
+    <time class="article-footer-updated" datetime="2019-11-08T03:05:07.673Z" itemprop="dateModified">
+    Last updated: 2019-11-08
     </time>
     <span itemprop="author publisher" itemscope="itemscope" itemtype="http://schema.org/Organization">
       <meta content="https://www.ieclipse.cn" itemprop="url">
