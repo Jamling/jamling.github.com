@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://www.ieclipse.cn/categories/pde/</loc>
+        <lastmod>2019-11-08T10:17:28.674Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://www.ieclipse.cn/categories/Web/</loc>
-        <lastmod>2019-10-18T14:20:08.385Z</lastmod>
+        <lastmod>2019-11-08T10:15:36.915Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -38,13 +45,6 @@
     <url>
         <loc>https://www.ieclipse.cn/categories/Java/</loc>
         <lastmod>2019-07-22T11:25:01.909Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.ieclipse.cn/categories/pde/</loc>
-        <lastmod>2019-07-22T11:25:01.908Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://www.ieclipse.cn/p/hexo-theme-nova/layouts.html</loc>
+        <lastmod>2019-11-08T07:18:23.266Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://www.ieclipse.cn/p/hexo-theme-nova/helpers.html</loc>
         <lastmod>2019-11-08T03:05:07.673Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -51,13 +58,6 @@
     
     <url>
         <loc>https://www.ieclipse.cn/p/hexo-theme-nova/</loc>
-        <lastmod>2019-07-22T11:25:02.003Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.ieclipse.cn/p/hexo-theme-nova/layouts.html</loc>
         <lastmod>2019-07-22T11:25:02.003Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

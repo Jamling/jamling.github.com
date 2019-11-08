@@ -167,7 +167,7 @@
     <h1 class="article-title" itemprop="name headline">
       Layouts
     </h1>
-    <meta content="2019-07-22T11:25:02.003Z" itemprop="datePublished">
+    <meta content="2019-11-08T07:18:23.266Z" itemprop="datePublished">
   </header>
   <div class="article-content" itemprop="articleBody">
   
@@ -277,7 +277,7 @@ layout
 <pre><code class="js">{% if page.gh %}
   {% set gh = gh_opts() %}
   {% if gh.type === 'get_contents' %} 
-    {% set page.content = gh_contents(gh) %}
+    {% set page.content = gh_contents() %}
     {{ partial('project/contents', {} )}}
   {% elseif gh.type === 'get_repos' %}
     {{ partial('project/projects', {} )}}
@@ -344,8 +344,8 @@ hexo.extend.helper.register(&#39;post_cates&#39;, function(post){
 
   <script src="/js/decrypt.min.js"></script>
   <footer class="article-footer">
-    <time class="article-footer-updated" datetime="2019-07-22T11:25:02.003Z" itemprop="dateModified">
-    Last updated: 2019-07-22
+    <time class="article-footer-updated" datetime="2019-11-08T07:18:23.266Z" itemprop="dateModified">
+    Last updated: 2019-11-08
     </time>
     <span itemprop="author publisher" itemscope="itemscope" itemtype="http://schema.org/Organization">
       <meta content="https://www.ieclipse.cn" itemprop="url">

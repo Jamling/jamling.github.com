@@ -13,7 +13,7 @@
   <meta name="og:site_name" content="Jamling's Blog and Project Site">
   <meta name="og:image" content="https://www.ieclipse.cn/image/logo.png">
   <meta name="og:title" content="Hexo多语言站点解决方案">
-  <meta name="og:url" content="https://www.ieclipse.cn/2016/06/02/other/tech-hexo-i18n/">
+  <meta name="og:url" content="https://www.ieclipse.cn/2016/06/02/Web/tech-hexo-i18n/">
   <meta name="og:description" content="Hexo是一个静态博客应用，所以在多语言站点支持上，并不是很好。虽然Hexo支持多语言，但是要生成多语言站点，还是有一些困难的。基于Hexo的一些特性，我给出了几种解决方案">
 
   <meta name="twitter:card" content="summary">
@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="Hexo是一个静态博客应用，所以在多语言站点支持上，并不是很好。虽然Hexo支持多语言，但是要生成多语言站点，还是有一些困难的。基于Hexo的一些特性，我给出了几种解决方案">
 
   <!-- Canonical links -->
-  <link rel="canonical" href="https://www.ieclipse.cn/en/2016/06/02/other/tech-hexo-i18n/index.html">
+  <link rel="canonical" href="https://www.ieclipse.cn/en/2016/06/02/Web/tech-hexo-i18n/index.html">
   <!-- Alternative links -->
   <!-- CSS and JS-->
   <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
@@ -94,9 +94,9 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
             <ul class="dropdown-menu animated fadeInDown faster">
-              <li><a href="/2016/06/02/other/tech-hexo-i18n/">简体中文</a></li>
+              <li><a href="/2016/06/02/Web/tech-hexo-i18n/">简体中文</a></li>
               
-              <li><a href="/en/2016/06/02/other/tech-hexo-i18n/">English</a></li>
+              <li><a href="/en/2016/06/02/Web/tech-hexo-i18n/">English</a></li>
               
             </ul>
           </li>
@@ -124,7 +124,7 @@
       
       <span class="post-share">
         <a href="#share" class="icon nova-share"><span class="hidden-xs">Share</span><span class="jiathis_counter_style"></span></a>
-        <a href="#comment" class="icon nova-bubbles"><span class="ds-thread-count" id="changyan_count_unit" data-thread-key="7beab50d8ad06d25e31805818c40a86a"></span><span class="hidden-xs">Comment</span></a>
+        <a href="#comment" class="icon nova-bubbles"><span class="ds-thread-count" id="changyan_count_unit" data-thread-key="c00de672eb7403057f500afe730d0678"></span><span class="hidden-xs">Comment</span></a>
         <!--<a href="#like" class="icon nova-heart2-full"><span class="count" id="changyan_parti_unit"></span><span class="hidden-xs">Like</span></a>-->
         <a href="#" class="icon nova-eye"><span class="count lc-count"></span><span class="hidden-xs">Views</span></a>
       </span>
@@ -168,14 +168,14 @@ public_dir: public/en</code></pre>
 <p>对于每个生成器，动态注册一个-i18n的生成器，专门用于处理首页，归档页等页面。<br>此时，发现所有的页面都支持多语言了。而且在hexo s模式下运行，语言想换就换。真是激动极了！然而在非默认语言下，点击链接的时候，发现仍然跳转到了默认语言！</p>
 <p>OMG！难道之前的工作都白费了吗？</p>
 <h2 id="方案五"><a href="#方案五" class="headerlink" title="方案五"></a>方案五</h2><p>针对链接，特地重写了辅助函数url_for_lang(path)，根据当前路径判断是否带语言，如果带语言，则链接地址也带上语言前缀，插件中使用url_for(path)的地方全部替换为url_for_lang(path)。终于~全部搞定！</p>
-<blockquote class="addlink">本文永久链接： [https://www.ieclipse.cn/2016/06/02/other/tech-hexo-i18n/](https://www.ieclipse.cn/2016/06/02/other/tech-hexo-i18n/) 未经允许，禁止转载，如有问题，请在我的博客原始页面提交评论。</blockquote>
+<blockquote class="addlink">本文永久链接： [https://www.ieclipse.cn/2016/06/02/Web/tech-hexo-i18n/](https://www.ieclipse.cn/2016/06/02/Web/tech-hexo-i18n/) 未经允许，禁止转载，如有问题，请在我的博客原始页面提交评论。</blockquote>
   
   </div>
 
   <script src="/js/decrypt.min.js"></script>
   <footer class="article-footer">
-    <time class="article-footer-updated" datetime="2019-07-22T11:25:01.978Z" itemprop="dateModified">
-    Last updated: 2019-07-22
+    <time class="article-footer-updated" datetime="2019-11-08T10:15:36.915Z" itemprop="dateModified">
+    Last updated: 2019-11-08
     </time>
     <span itemprop="author publisher" itemscope="itemscope" itemtype="http://schema.org/Organization">
       <meta content="https://www.ieclipse.cn" itemprop="url">
@@ -255,13 +255,13 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
 <script src="//unpkg.com/valine/dist/Valine.min.js">
 </script>
 <!--PC和WAP自适应版-->
-<div id="vcomments" data-sid="7beab50d8ad06d25e31805818c40a86a"></div>
+<div id="vcomments" data-sid="c00de672eb7403057f500afe730d0678"></div>
 <script>
     new Valine({
         el: '#vcomments',
         appId: 'rYUER9KxmGUXSpfEtu7wCFMo-gzGzoHsz',
         appKey: 'k7hzTkcS0blxgry4VT9rJjYj',
-        path: '7beab50d8ad06d25e31805818c40a86a',
+        path: 'c00de672eb7403057f500afe730d0678',
         recordIP: true
     })
 </script>
@@ -383,8 +383,8 @@ with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElemen
   }
 
   var lc_config = {
-    pageId : '7beab50d8ad06d25e31805818c40a86a',
-    url : 'en/2016/06/02/other/tech-hexo-i18n/' || 'https://www.ieclipse.cn/2016/06/02/other/tech-hexo-i18n/',
+    pageId : 'c00de672eb7403057f500afe730d0678',
+    url : 'en/2016/06/02/Web/tech-hexo-i18n/' || 'https://www.ieclipse.cn/2016/06/02/Web/tech-hexo-i18n/',
     title : 'Hexo多语言站点解决方案'
   };
   lc_debug && console.log('lcconfig', lc_config);
