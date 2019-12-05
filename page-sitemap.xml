@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://www.ieclipse.cn/about/resume2.html</loc>
+        <lastmod>2019-12-05T10:00:27.211Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://www.ieclipse.cn/p/hexo-theme-nova/layouts.html</loc>
         <lastmod>2019-11-08T07:18:23.266Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -324,13 +331,6 @@
     
     <url>
         <loc>https://www.ieclipse.cn/categories/</loc>
-        <lastmod>2019-07-22T11:25:01.985Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.ieclipse.cn/about/resume2.html</loc>
         <lastmod>2019-07-22T11:25:01.985Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
